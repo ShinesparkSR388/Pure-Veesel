@@ -1,0 +1,30 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header_component {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(42, 40, 41);
+  padding: 15px 9%;
+}
+.header_component .logo_library {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.header_component .ul_list {
+  display: flex;
+  list-style: none;
+}
+.header_component .a_link {
+  text-decoration: none;
+  color: white;
+  margin-left: 35px;
+}
+
+/*# sourceMappingURL=navegation_bar1.css.map */

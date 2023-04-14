@@ -1,0 +1,41 @@
+@import 'navegation_bar_module_1';
+
+* {
+    padding: $padding_global;
+    margin: $margin_global;
+    box-sizing: $box_sizing_global;
+}
+
+.header_component {
+    width: $wth_header;
+    display: $display_header;
+    justify-content: $justify_content_header;
+    align-items: $align_items_header;
+    background: $bg_header;
+    padding: $padding_header;
+
+    .logo_library {
+        width: $wth_logo_library;
+        height: $height_logo_library;
+        border-radius: $bor_radius_logo_library;
+    }
+
+    .ul_list {
+        display: $display_ul_list;
+        list-style: $list_style_ul_list;
+    }
+
+    .a_btn_link {
+        color: $color_a_btn;
+        text-decoration: $txt_decoration_a_btn;
+    }
+
+    .btn_link {
+        width: $wth_btn_link;
+        height: $height_btn_link;
+        background: $bg_btn_link;
+        border-radius: $bor_radius_btn_link;
+        border: $border_btn_link;
+        margin-left: $margin_left_btn_link;
+    }
+}
