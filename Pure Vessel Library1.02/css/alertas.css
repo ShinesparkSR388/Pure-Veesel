@@ -1,0 +1,257 @@
+@charset "UTF-8";
+/*Paleta de colores de la libreria Pure Vessel
+ los cuales se basan en los usados en el juego hollow knight*/
+/*Paleta de colores degradados*/
+/*Paleta de colores normales */
+body {
+  background: linear-gradient(to left, rgb(77, 112, 209), rgb(1, 2, 56));
+}
+
+/*Variebles responsive de las alertas*/
+/*Para celular*/
+body {
+  background: linear-gradient(to left, rgb(141, 138, 137), rgb(42, 40, 41));
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+/*Contenedor principal de las alertas*/
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/*Clase alerta */
+.alertas {
+  width: 600px;
+  border-radius: 4px;
+  padding: 0.5rem;
+  text-align: center;
+  flex-direction: row;
+  max-width: 30%;
+  margin: 1rem;
+}
+
+/*Diseño 1*/
+.error {
+  background-color: rgb(59, 176, 150);
+  border: 3px solid rgb(34, 52, 90);
+  color: rgb(34, 52, 90);
+}
+
+/*Clase de los iconos*/
+.fa {
+  font-size: 2rem;
+}
+
+.btnError {
+  width: 90px;
+  height: 30px;
+  background-color: rgb(59, 176, 150);
+  border: 2px solid rgb(34, 34, 133);
+  color: rgb(34, 52, 90);
+  border-radius: 6px;
+}
+
+/*Diseño 2*/
+.congratulations {
+  width: 600px;
+  height: 120px;
+  border: 2px solid rgb(42, 40, 41);
+  padding: 0;
+  color: white;
+}
+
+/*Contenedores secundarios del diseño 2*/
+.icon {
+  background-color: rgb(42, 40, 41);
+}
+
+.secundario {
+  background-color: rgb(141, 138, 137);
+  height: 70px;
+}
+
+.btnOk {
+  width: 90px;
+  height: 30px;
+  background-color: rgb(141, 138, 137);
+  border: 2px solid rgb(42, 40, 41);
+  color: white;
+  border-radius: 6px;
+}
+
+/*Diseño 3*/
+.cerrar {
+  background-color: rgb(198, 183, 190);
+  border-radius: 10px;
+  border: 3px solid rgb(87, 0, 128);
+  color: rgb(1, 2, 56);
+}
+
+.salir {
+  background-color: rgb(198, 183, 190);
+  color: rgb(1, 2, 56);
+  border: 2px solid rgb(87, 0, 128);
+  font-size: 16px;
+  float: right;
+  margin: 4px;
+}
+
+/*Diseño 4*/
+.welcome {
+  background-color: white;
+  font-size: 20px;
+  border: 2px solid rgb(77, 112, 209);
+  color: rgb(37, 36, 36);
+}
+
+.bien {
+  width: 66px;
+  height: 30px;
+  color: white;
+  background-color: rgb(98, 196, 208);
+  border: 2px solid rgb(77, 112, 209);
+  font-family: "Times New Roman", Times, serif;
+}
+
+/*Diseño 5*/
+.alerta2 {
+  width: 600px;
+  height: 70px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.exito {
+  background-color: rgb(105, 209, 64);
+  border-radius: 10px;
+  border: 2px solid green;
+  font-size: 16px;
+  margin: 10px;
+}
+
+.text1 {
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.text2 {
+  font-size: 20px;
+}
+
+.exit {
+  width: 70px;
+  height: 70px;
+  border-radius: 8px;
+  color: white;
+  font-size: 20px;
+}
+
+.exit-1 {
+  background-color: rgb(105, 209, 64);
+  border: 2px solid rgb(105, 209, 64);
+}
+
+/*Diseño 6*/
+.info {
+  margin: 10px;
+  background-color: rgb(41, 162, 233);
+  border-radius: 10px;
+}
+
+.exit-2 {
+  background-color: rgb(41, 162, 233);
+  border: 2px solid rgb(41, 162, 233);
+}
+
+/*Responsive de los diseños*/
+/*Para Celular*/
+@media (max-width: 362px) {
+  .alertas {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .alerta2 {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+  }
+  .exit {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+  }
+  .exit-1 {
+    border: 2px solid green;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .exit-2 {
+    border: 2px solid rgb(0, 119, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 461px) {
+  .alertas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+  }
+  .alerta2 {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+  }
+  .exit {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+  }
+  .exit-1 {
+    border: 2px solid green;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .exit-2 {
+    border: 2px solid rgb(0, 119, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .icon {
+    border: 2px solid white;
+  }
+}
+
+/*# sourceMappingURL=alertas.css.map */
