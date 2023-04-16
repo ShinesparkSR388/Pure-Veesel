@@ -29,5 +29,27 @@
         text-decoration: $txt_decoration_a_link;
         color: $color_a_link;
         margin-left: $margin_left_a_link;
+        border-bottom: $border_bottom;
+    }
+}
+
+/* version tablet */
+@media (800px <= width <= 1000px)  {
+    .header_component .a_link {
+        border-bottom: $border_bottom;
+        margin-left: $margin_left_responsive1;
+    }
+}
+
+/* version mobile */
+@media (600px <= width < 800px) {
+    .ul_list {
+        flex-direction: $flex_direction_col;
+    }
+
+    .header_component .a_link {
+        display: $display_block;
+        border-bottom: $border_bottom;
+        margin-bottom: $margin_bottom;
     }
 }

@@ -39,3 +39,23 @@
         margin-left: $margin_left_btn_link;
     }
 }
+
+/* version tablet */
+@media (800px <= width <= 1000px)  {
+    .header_component .btn_link {
+      width: $wth_responsive1;
+      height: $height_responsive1;
+      border-radius: $bor_radius_responsive;
+      margin-left: $margin_left_responsive2;
+    }
+}
+
+/* version mobile */
+@media (600px <= width < 800px) {
+    .header_component .btn_link {
+      width: $wht_responsive2;
+      height: $height_responsive2;
+      border-radius: $bor_radius_responsive;
+      margin-left: $margin_left_responsive2;
+    }
+}

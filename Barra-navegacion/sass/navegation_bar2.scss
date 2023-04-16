@@ -29,6 +29,7 @@
         text-decoration: $txt_decoration_a_link;
         color: $color_a_link;
         margin-left: $margin_left_a_link;
+        border-bottom: $border_bottom;
     }
 
     .a_btn_link {
@@ -42,5 +43,26 @@
         background: $bg_btn_link;
         border-radius: $bor_radius_btn_link;
         border: $border_btn_link;
+    }
+}
+
+/* version tablet */
+@media (800px <= width <= 1000px)  {
+    .header_component .a_link {
+      margin-left: $margin_left_responsive1;
+      border-bottom: $border_bottom;
+    }
+}
+
+/* version mobile */
+@media (600px <= width < 800px) {
+    .ul_list {
+      flex-direction: $flex_direction_col;
+    }
+  
+    .header_component .a_link {
+      display: $display_block;
+      border-bottom: $border_bottom;
+      margin-bottom: $margin_bottom;
     }
 }
