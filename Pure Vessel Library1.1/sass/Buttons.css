@@ -1,0 +1,154 @@
+@charset "UTF-8";
+/*Paleta de colores de la libreria Pure Vessel
+ los cuales se basan en los usados en el juego hollow knight*/
+/*Paleta de colores degradados*/
+/*Paleta de colores normales */
+body {
+  background: linear-gradient(to left, rgb(77, 112, 209), rgb(1, 2, 56));
+}
+
+/*Archivo que contiene los diseños de los botones*/
+/*Importamos la clase colors a este archivo*/
+body {
+  background: linear-gradient(to left, rgb(77, 112, 209), rgb(1, 2, 56));
+}
+
+.botones {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/*Primer diseño de botones*/
+.btnPrimary {
+  width: 200px;
+  height: 50px;
+  border: 2px solid rgb(98, 196, 208);
+  border-radius: 4px;
+  background: rgba(249, 249, 250, 0.37);
+  box-shadow: inset 0 0 20px 0 rgb(98, 196, 208);
+  color: aqua;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+/*Segundo diseño */
+.btnSecondary {
+  width: 250px;
+  height: 40px;
+  position: relative;
+  border-radius: 20px;
+  background: linear-gradient(to left, rgb(59, 176, 150), rgb(145, 198, 172));
+  border: 2px solid rgb(77, 112, 209);
+  color: rgb(77, 112, 209);
+  font-size: 15px;
+  font-family: "Times New Roman", Times, serif;
+  cursor: pointer;
+  margin: 20px;
+}
+
+/*Tercer diseño*/
+.btnT {
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  position: relative;
+  margin: 20px;
+}
+
+.btn-3 {
+  color: rgb(245, 217, 105);
+  background-color: rgb(170, 46, 35);
+}
+
+.btn-3::after, .btn-3::before {
+  border: 3px solid rgb(245, 217, 105);
+  content: "";
+  position: absolute;
+  width: calc(100% - 6px);
+  height: calc(100% - 6px);
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: transform 0.3s ease;
+}
+
+.btn-3:hover::after {
+  transform: translate(-5px, -5px);
+}
+
+.btn-3:hover::before {
+  transform: translate(5px, 5px);
+}
+
+/*Diseño 4 */
+.btnC {
+  position: relative;
+  width: 200px;
+  height: 50px;
+  background-color: rgb(116, 151, 102);
+  overflow: hidden;
+  border: 1px solid green;
+  border-radius: 8px;
+  box-shadow: 6px 6px 0 rgb(45, 75, 57);
+  color: darkgreen;
+}
+
+.btnC::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(45, 75, 57);
+  z-index: -1;
+  border-radius: 8px;
+  transform: translateX(5px);
+}
+
+.btnC:active {
+  transform: translateX(5px);
+}
+
+.btnC:active::before {
+  transform: translateX(0);
+}
+
+/*Diseño 5*/
+.btnQ {
+  width: 100px;
+  height: 60px;
+  border-radius: 20px;
+  background-color: transparent;
+  border: 2px solid rgb(209, 177, 204);
+  color: rgb(209, 177, 204);
+  font-size: 15px;
+  font-family: "Times New Roman", Times, serif;
+  cursor: pointer;
+  margin: 20px;
+}
+
+.btnQ:hover {
+  background-color: rgb(209, 177, 204);
+  color: white;
+}
+
+/*Diseño 6*/
+.btnS {
+  width: 200px;
+  height: 60px;
+  border-radius: 3px;
+  background-color: transparent;
+  border: 2px solid #FE6244;
+  color: #FE6244;
+  font-size: 15px;
+  font-family: "Times New Roman", Times, serif;
+  cursor: pointer;
+  margin: 20px;
+}
+
+.btnS:hover {
+  background-color: #FE6244;
+  color: white;
+}/*# sourceMappingURL=Buttons.css.map */
