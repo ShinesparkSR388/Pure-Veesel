@@ -1,0 +1,34 @@
+/*Paleta de colores de la libreria Pure Vessel
+ los cuales se basan en los usados en el juego hollow knight*/
+
+ /*Paleta de colores degradados*/
+ $PrimaryD:linear-gradient(to left,#2B5876,#4E4376);
+ $SecondaryD:linear-gradient(to left,#22f3b4ef,#19977e );
+ $CuencaAntigua: linear-gradient(to left,rgb(141,138,137), rgb(42,40,41));
+ $dark_sky: linear-gradient(to left,rgb(77,112,209) ,rgb(1,2,56));
+ $LlamasD:linear-gradient(to left,rgb(170, 46, 35) ,rgb(245, 217, 105));
+ $Night_blue:linear-gradient(to left,rgb(34, 52, 90),rgb(27, 22, 63));
+ $LD:linear-gradient(to left,rgb(198, 183, 190),rgb(86, 90, 117));
+ 
+ /*Paleta de colores normales */
+ $Primary:rgb(59, 176, 150);
+ $Secondary:#FE6244;
+ $RedDark:rgb(170, 46, 35);
+ $AquaCla:rgb(145, 198, 172);
+ $VeDark:rgb(45, 75, 57);
+ $GrayGreem:rgb(116, 151, 102);
+ $lightOs:rgb(98, 196, 208);
+ $AzulOpaco:rgb(114, 168, 206);
+ $Gris1:rgba(249, 249, 250, 0.37);
+ $AmarilloPV:rgb(245, 217, 105);
+ $LilaPV:rgb(209, 177, 204);
+
+ $Paleta:(
+    "Primary":rgb(59, 176, 150),
+    "Secondary":#FE6244,
+    "RedDark":rgb(170, 46, 35),
+    "AquaCla":rgb(145, 198, 172),
+    "GrayGreem":rgb(116, 151, 102),
+    "LilaPV":rgb(209, 177, 204),
+    "light":#fff
+ );
