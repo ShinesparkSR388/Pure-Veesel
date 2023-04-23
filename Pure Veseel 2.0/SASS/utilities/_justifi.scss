@@ -1,4 +1,5 @@
 //MARGIN
+
 .margin-1{
     margin: 10px;
 }
@@ -319,7 +320,6 @@
 }
 
 //BORDER
-
 .border-1{
     border: 10px;
 }
@@ -353,7 +353,7 @@
 
 //border-top
 .border-right-1{
-    border-right: 10px;
+    border-right-width: 10px;
 }
 .border-right-2{
     border-right: 20px;
@@ -478,6 +478,24 @@
 .border-top-10{
     border-top: 100px;
 }
+//BORDER STYLE
+
+//border-right-style
+.border-right-solid{
+    border-right-style: solid;
+}
+//border-left-style
+.border-left-solid{
+    border-left-style: solid;
+}
+//border-bottom-style
+.border-bottom-solid{
+    border-bottom-style: solid;
+}
+//border-top-style
+.border-top-solid{
+    border-top-style: solid;
+}
 //BORDER-COLORS
 .border-black{
     border-color: $dark_bg_color_2;
@@ -512,10 +530,9 @@
 
 }
 //BORDER-WIDTH
-.border-widthI{
-    border-width:2px;
+.border-width-0{
+    border-width: 2px;
 }
-
 .border-width-1{
     border-width: 5px;
 }

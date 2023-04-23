@@ -9,15 +9,16 @@
         './Componentes/navegation_bar_module_1',
         './Componentes/navegation_bar2',
         './Componentes/navegation_bar3',
-        './Componentes/cards',
-        './Componentes/container',
-        './Componentes/forms',
-        './Componentes/row-colum';
+        './Componentes/cards.scss',
+        './Componentes/container.scss',
+        './Componentes/forms.scss',
+        './Componentes/row-colum',
+        './Componentes/side_bar.scss';
 
-@import './utilities/align',
-        './utilities/background-colors',
-        './utilities/justifi',
-        './utilities/opacity',
-        './utilities/rounded',
-        './utilities/shadows',
-        './utilities/text';
+@import './utilities/align.scss',
+        './utilities/background-colors.scss',
+        './utilities/justifi.scss',
+        './utilities/opacity.scss',
+        './utilities/rounded.scss',
+        './utilities/shadows.scss',
+        './utilities/text.scss';

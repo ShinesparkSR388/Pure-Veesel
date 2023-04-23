@@ -44,16 +44,18 @@
 
 //color
 .text-ligth{
-    color: $ligth_bg_color;
+    color: $font_color;
 }
 .text-dark{
     color: $dark_bg_color_2;
 }
-
-.text-ligth2{
-    color: $light;
+.text.red{
+    color: $RedDark;
 }
-//Text Type
+.text-primary{
+    color: $Primary;
+}
+//Text font
 
 .text-calibri{
     font-family: Calibri;
@@ -69,4 +71,14 @@
 }
 .text-thanoma{
     font-family: Tahoma;
+}
+//Text type
+.text-style-italic{
+    font-style: italic;
+}
+.text-style-oblique{
+    font-style: oblique;
+}
+.text-style-normal{
+    font-style: normal;
 }
