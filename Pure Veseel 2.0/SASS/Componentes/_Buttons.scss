@@ -1,0 +1,176 @@
+//Nombre de la variable 
+$btnPV:'btnPV';
+
+body {
+    background: $dark_sky;
+}
+
+.botones{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+%btn {
+   height: 40px;
+   min-width: 100px;
+   border: none;
+   border-radius: 5px;
+   color: white;
+   font-size: 16px;
+   margin: 5px;
+   box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+   &:hover{
+    cursor: pointer;
+   }
+}
+
+//Hacemos uso del Nesting para tener una mejor optimizacion
+.#{$btnPV}-btn-{
+    //Diseño 1
+    &Primary{
+        @extend %btn;
+        width: 200px;
+        height: 50px;
+        border: 2px solid $lightOs;
+        border-radius: 4px;
+        background: $Gris1;
+        box-shadow:inset 0 0 20px 0 $lightOs;
+        color: aqua;
+        font-size: 15px;
+    }
+
+    //Diseño 2
+    &Secondary{
+     @extend %btn;
+    background: $Primary;
+    }
+
+    //Tercer diseño
+    &three{
+      @extend %btn;
+      width: 250px;
+      height: 40px;
+      position: relative;
+      border-radius: 20px;
+      background:linear-gradient(to left,$Secondary, $AmarilloPV); 
+      border: 2px solid rgb(77,112,209);
+      font-size: 16px;
+      font-family: 'Times New Roman', Times, serif;
+      margin: 10px;
+    }
+
+    //Diseño 4
+    &Four{
+         padding: 10px 20px;
+         font-size: 1.5rem;
+         position: relative;
+         margin: 10px;
+         color: $AmarilloPV;
+         background-color:$RedDark;
+         cursor: pointer;
+    }
+
+    &Four::after, &Four::before{
+        border: 3px solid $AmarilloPV; 
+        content: '';
+        position: absolute;
+        width: calc(100% - 6px);
+        height: calc(100% - 6px);
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+        transition: transform 0.3s ease;
+    }
+    
+    &Four:hover::after{
+        transform: translate(-5px, -5px);
+    }
+    
+    &Four:hover::before{
+        transform: translate(5px, 5px);
+    }
+
+    //Diseño 5
+    &Five{
+        position: relative;
+        width: 200px;
+        height: 50px;
+        background-color:  $GrayGreem;
+        overflow: hidden;
+        border: 1px solid green;
+        border-radius: 8px;
+        box-shadow:6px 6px 0  $VeDark;
+        color: darkgreen;
+        cursor: pointer;
+        margin: 5px;
+    }
+
+    &Five::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $VeDark;
+        z-index: -1;
+        border-radius: 8px;
+        transform: translateX(5px)
+    }
+
+    &Five:active {
+        transform: translateX(5px);
+    }
+
+    &Five:active::before {
+        transform: translateX(0);
+    } 
+}
+
+//Diseño 6 y 7 Buttons estilo outline usando selector padre
+  .btn-outline{
+    width: 200px;
+    height: 60px;
+    border-radius: 5px;
+    background: transparent;
+    font-size: 16px;
+    margin: 10px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: 0.5s all ease-in-out;
+    &Primary{
+        border: 1px solid rgb(209, 177, 204);
+        color: rgb(209, 177, 204);
+        &:hover{
+            background: rgb(209, 177, 204);
+            color: white;
+        }
+    }
+
+    &Secondary{
+        border: 1px solid #FE6244;
+        color: #FE6244;
+        &:hover{
+            background: #FE6244;
+            color: white;
+        }
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
