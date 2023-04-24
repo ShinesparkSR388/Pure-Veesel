@@ -1,7 +1,7 @@
 $container-widths:(
     lg: 100%,
     md: 800px,
-    sm: 550px
+    sm: 540px
 );
 
 //contenedores variables
@@ -19,6 +19,32 @@ $container-widths:(
     margin-right: auto;
     margin-left: auto;
 }
+
+.container-auto{
+    width: map-get($map: $container-widths, $key: md);
+    padding-right: 25px;
+    padding-left: 25px;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media screen and (max-width: 900px)
+{
+    .container-auto{
+        width: map-get($map: $container-widths, $key: sm);
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "box1"
+            "box2"
+        ;
+        padding-right: 25px;
+        padding-left: 25px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
 .container-md{
     width: map-get($map: $container-widths, $key: md);
     padding-right: 25px;
