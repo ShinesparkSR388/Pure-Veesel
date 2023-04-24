@@ -1,0 +1,83 @@
+$margin_general: 0;
+$box-sizing_general: border-box;
+$display_row: flex;
+$flex_wrap_row: wrap;
+$flex_colum: 1;
+$padding_colum: 0 15px;
+$border_black_colum: 1px solid black;
+
+$porcentaje_responsive: 100%;
+$item_porcentajes: (
+    "1": 8.33%,
+    "2": 16.66%,
+    "3": 25%,
+    "4": 33.33%,
+    "5": 41.66%,
+    "6": 50%,
+    "7": 58.33%,
+    "8": 66.66%,
+    "9": 75%,
+    "10": 83.33%,
+    "11": 91.66%,
+    "12": 100%
+);
+
+* {
+    margin: $margin_general;
+    box-sizing: $box-sizing_general;
+}
+
+.row {
+    display: $display_row;
+    flex-wrap: $flex_wrap_row;    
+}
+
+.colum {
+    flex: $flex_colum;
+    padding: $padding_colum;
+}
+
+.border_black {
+    border: $border_black_colum;
+}
+
+// recorremos los elementos del mapa colocando un porcentaje especifico por cada numero de columnas
+@each $porcentajes, $value in $item_porcentajes {
+    .colum-small-#{$porcentajes} {
+        flex-basis: map-get($item_porcentajes, $porcentajes);
+    }
+}
+
+@each $porcentajes, $value in $item_porcentajes {
+    .colum-medium-#{$porcentajes} {
+        flex-basis: map-get($item_porcentajes, $porcentajes);
+    }
+}
+
+@each $porcentajes, $value in $item_porcentajes {
+    .colum-large-#{$porcentajes} {
+        flex-basis: map-get($item_porcentajes, $porcentajes);
+    }
+}
+
+// responsive
+@media (max-width: 576px) {
+    .colum-small-1, .colum-small-2, .colum-small-3, .colum-small-4, .colum-small-5, .colum-small-6, .colum-small-7,
+    .colum-small-8, .colum-small-9, .colum-small-10, .colum-small-11, .colum-small-12 {
+        flex-basis: $porcentaje_responsive;
+    }
+}
+
+@media (max-width: 768px) {
+    .colum-medium-1, .colum-medium-2, .colum-medium-3, .colum-medium-4, .colum-medium-5, .colum-medium-6, .colum-medium-7,
+    .colum-medium-8, .colum-medium-9, .colum-medium-10, .colum-medium-11, .colum-medium-12 {
+        flex-basis: 100%;
+    }
+}
+
+@media (max-width: 991px) {
+    .colum-large-1, .colum-large-2, .colum-large-3, .colum-large-4, .colum-large-5, .colum-large-6, .colum-large-7,
+    .colum-large-8, .colum-large-9, .colum-large-10, .colum-large-11, .colum-large-12 {
+        flex-basis: 100%;
+    }
+}
