@@ -22,11 +22,11 @@ https://shinesparksr388.github.io/Pure-Veesel/
 Actualmente la librería se encuentra en su versión 2.0, puedes ver cada una de las versiones anteriores en este repositorio.
 
 ## Autores ✒️
-John Elvis Arbaiza Velásquez.
+* John Elvis Arbaiza Velásquez.
 https://github.com/JohnArbaiza1
-Luis Emilio González Molina.
+* Luis Emilio González Molina.
 https://github.com/ShinesparkSR388
-Nelson Numa Conde Salgado.
+* Nelson Numa Conde Salgado.
 https://github.com/Emilioo0
 
 
