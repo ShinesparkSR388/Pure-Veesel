@@ -23,8 +23,11 @@ Actualmente la librería se encuentra en su versión 2.0, puedes ver cada una de
 
 ## Autores ✒️
 ♦John Elvis Arbaiza Velásquez.
+https://github.com/JohnArbaiza1
 ♦Luis Emilio González Molina.
+https://github.com/ShinesparkSR388
 ♦Nelson Numa Conde Salgado.
+https://github.com/Emilioo0
 
 
 ## Proyecto realizado con fines educativos :mortar_board:
