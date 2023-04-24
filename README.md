@@ -16,6 +16,7 @@ herramienta que es utilizada por los desarrolladores web para traducir un códig
 
 ## Wiki 📖
 Puedes encontrar mucha más información acerca de nuestro proyecto en nuestra pagina:
+https://shinesparksr388.github.io/Pure-Veesel/
 
 ## Version 📌
 Actualmente la librería se encuentra en su versión 2.0, puedes ver cada una de las versiones anteriores en este repositorio.
