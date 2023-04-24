@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>Document</title>
+</head>
+<body class="text-calibri bg-Night_blue">
+    <div class="sidebar">
+        <h3>Utilidades</h3>
+        <a href="text.html">Texto</a>
+        <a href="text-color.html">Color texto</a>
+        <a href="text-bold.html">Grosor texto</a>
+        <a href="shadows.html">Sombras</a>
+        <a href="around.html">Contornos</a>
+        <a class="active" href="flex.html">Mover elementos</a>
+        <a href="rounded.html">Redondear</a>
+        <a href="Opacity.html">Opacidad</a>
+        <a href="Background.html">Color de fondo</a>
+      </div>
+      <div class="container-md text-ligth text-w-8 text-5 padding-top-2">
+        <h1 class="text-style-italic">Alinear Elementos</h1>
+        <p class="text-w-2 text-5 text-style-italic padding-2">
+            Uso de la clase <span class="text-primary">< flex ></span> para mover elementos alrrededor de la pantalla
+        </p>
+        <h2>flex-container</h2>
+        <p class="text-w-2 text-5 text-style-italic">
+            Esta clase define un contenedor para mover elementos alrrededor de la pantalla usando Flexbox
+        </p>
+        <div class="container-lg">
+            <div class="row">
+                <div class="col-8">
+                    <h3 class="text-w-2 text-5">Definimos el contenedor</h3>
+                    <img class="item border-width-1 border-solid border-ligth rounded-2" src="./IMG/codeflex.png" alt="IMG Introduccion" style="height: 116px;">
+                    
+                    <h3 class="text-w-2 text-5 margin-top-2 margin-bottom-1">Y en la misma clase vamos a definir la direccion de el contenido agregando una clase mas utilizamos las propiedades en el contenedor</h3>
+                </div>
+            </div>
+
+            <div class="row bg-AquaCla border-ligth border-bottom-solid border-bottom">
+                <div class="col-4"><h3 class="">Sintaxis</h3></div>
+                <div class="col-4"><h3 class="">Visualizacion</h3></div>
+                
+            </div>
+            <div class="row margin-bottom-1">
+                <div class="col-4"><span class="text-primary">flex-align-left</span></div>
+                <div class="col-4 border-solid flex-container flex-align-left" style="height:100px; ">
+                    <div class=""><span>Objeto</span></div>   
+                </div>
+            </div>
+            <div class="row margin-bottom-1">
+                <div class="col-4"><span class="text-primary">flex-align-right</span></div>
+                <div class="col-4 border-solid flex-container flex-align-right" style="height:100px; ">
+                    <div class=""><span>Objeto</span></div>   
+                </div>
+            </div>
+            <div class="row margin-bottom-1">
+                <div class="col-4"><span class="text-primary">flex-align-up</span></div>
+                <div class="col-4 border-solid flex-container flex-align-up" style="height:100px; ">
+                    <div class=""><span>Objeto</span></div>   
+                </div>
+            </div>
+            <div class="row margin-bottom-1">
+                <div class="col-4"><span class="text-primary">flex-align-down</span></div>
+                <div class="col-4 border-solid flex-container flex-align-down" style="height:100px; ">
+                    <div class=""><span>Objeto</span></div>   
+                </div>
+            </div>
+        </div>
+        <p class="text-w-2 text-5 text-style-italic">
+            Tambien podemos colocar los objetos como una columna o fila
+        </p>
+        <div class="container-lg">
+            <div class="row bg-AquaCla border-ligth border-bottom-solid border-bottom">
+                <div class="col-4"><h3 class="">Sintaxis</h3></div>
+                <div class="col-4"><h3 class="">Visualizacion</h3></div>
+                
+            </div>
+            <div class="row margin-bottom-1">
+                <div class="col-4"><span class="text-primary">flex-row</span></div>
+                <div class="col-4 border-solid flex-container flex-row" style="height:100px; ">
+                    <div class=""><span>Objeto</span></div>   
+                    <div class=""><span>Objeto</span></div> 
+                    <div class=""><span>Objeto</span></div> 
+                    <div class=""><span>Objeto</span></div> 
+                </div>
+            </div>
+            <div class="row margin-bottom-1">
+                <div class="col-4"><span class="text-primary">flex-column</span></div>
+                <div class="col-4 border-solid flex-container flex-column" style="height:100px; ">
+                    <div class=""><span>Objeto</span></div>   
+                    <div class=""><span>Objeto</span></div> 
+                    <div class=""><span>Objeto</span></div> 
+                    <div class=""><span>Objeto</span></div> 
+                </div>
+            </div>
+        </div>
+        </div>
+</body>
+</html>
