@@ -1,0 +1,129 @@
+$Margins: 10px;
+
+form{
+    background-color: $dark_bg_color_2;
+    margin: $Margins;
+    border: 1px solid $ligth_bg_color;
+    border-radius: 5px;
+}
+
+ input{
+    width: calc(100% - $Margins * 2);
+    height: 30px;
+    border: 1px solid $ligth_bg_color;
+    background-color: $dark_bg_color_1;
+    padding: auto;
+    margin: $Margins;
+    text-justify:distribute;
+    border-radius: 5px;
+    color: $font_color;
+ }
+ .input-1{
+    height: 30px;
+ }
+ .input-2{
+    height: 60px;
+ }
+ .input-3{
+    height: 90px;
+ }
+ label{
+  margin: $Margins;
+  font-style: normal;
+  color: $font_color;
+ }
+ .form-title{
+    font-size: larger;
+    font-weight: bold;
+    background-color: $dark_bg_color_1;
+    border-bottom: 1px solid $ligth_bg_color;
+    padding: 5px;
+ }
+
+ .form-text{
+    font-size: normal;
+    font-weight: normal;
+ }
+ select{
+    
+    height: 25px;
+    background-color: $dark_bg_color_1;
+    color: $font_color;
+    margin: $Margins;
+    font-style: normal;
+    border: 1px solid $ligth_bg_color;
+    padding: auto;
+    text-justify:distribute;
+    border-radius: 3px;
+ }
+
+ .select-1{
+    width: 70px;
+ }
+ .select-2{
+    width: 110px;
+ }
+ .select-3{
+    width: 150px;
+ }
+ 
+ .form-1{
+    display: grid;
+    width: calc(100% - $Margins * 2);
+    margin: calc($Margins);
+    grid-template-rows: 35px, 5fr, 35px;
+    grid-template-columns: auto;
+ }
+ .form-2{
+    display: grid;
+    gap: 10px;
+    margin: calc($Margins);
+    grid-template-columns: [first] 1fr, [second] 1fr;
+    grid-template-areas:
+        "form form"
+    ;
+ }
+ .form-2-rows{
+    display: grid;
+    width: first;
+    grid-template-rows: 35px, 5fr, 35px;
+    grid-template-columns: auto;
+ }
+.checkbox-1{
+  display: grid;
+  grid-template-columns: [Title] 1fr [Object] 1fr [Spam] 2fr;
+  grid-template-areas: 
+   "Title Object Spam"
+  ;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+input[type="checkbox"] { 
+   
+  display: grid;
+  place-content: center;
+   -webkit-appearance: none;
+  appearance: none;
+   background-color: $dark_bg_color_2;
+   font: inherit;
+  color: $font_color;
+  width: 25px;
+  height: 25px;
+  border: 1px solid $font_color;
+  border-radius: 1px;
+  transform: translateY(-0.075em);
+}
+input[type="checkbox"]::before {
+   content: "";
+   width: 15px;
+   height: 15px;
+   transform: scale(0);
+   transition: 120ms transform ease-in-out;
+   box-shadow: inset 1em 1em white;
+ }
+ 
+ input[type="checkbox"]:checked::before {
+   transform: scale(1);
+ }
