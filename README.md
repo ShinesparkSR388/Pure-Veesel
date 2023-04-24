@@ -4,10 +4,10 @@
 
 ### Libreria para desarrollo web. :desktop_computer:
 
-El equipo de Pure Vessel Library realizo el siguiente proyecto con el objetivo de poder facilitar un poco el desarrollo de diseños y proyectos orientados al ámbito web esperando que esta se de ayuda para quienes  se adentran en este mundo de la programación.
+El equipo de Pure Vessel Library realizo el siguiente proyecto con el objetivo de poder facilitar un poco el desarrollo de diseños y proyectos orientados al ámbito web esperando que esta sea de ayuda para quienes  se adentran en este mundo de la programación.
 
 ## requisitos 📋
-Para poder hacer uso de esta librería y si deseas colaborar en ella es necesario tener instalado nodejs para posteriormente poder instalar Sass
+Para poder hacer uso de esta librería y si deseas colaborar en ella es necesario tener instalado nodejs para posteriormente poder instalar Sass.
 
 ## Construido con 🛠️
 
@@ -16,4 +16,18 @@ herramienta que es utilizada por los desarrolladores web para traducir un códig
 
 ## Wiki 📖
 Puedes encontrar mucha más información acerca de nuestro proyecto en nuestra pagina:
+
+## Version 📌
+Actualmente la librería se encuentra en su versión 2.0, puedes ver cada una de las versiones anteriores en este repositorio.
+
+## Autores ✒️
+♦John Elvis Arbaiza Velásquez.
+♦Luis Emilio González Molina.
+♦Nelson Numa Conde Salgado.
+
+
+## Proyecto realizado con fines educativos :mortar_board:
+
+
+
 
